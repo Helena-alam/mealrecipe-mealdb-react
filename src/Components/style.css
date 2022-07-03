@@ -1,0 +1,237 @@
+.search-bar
+{
+    margin: 1rem 0;
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius: 1rem;
+    /* background-color: linear-gradient(55deg,rgb(182, 238, 243), #ebd0ad); */
+    background: linear-gradient( 35deg, rgb(182, 238, 243), #ebd0ad);
+    padding: 0.3rem 1rem;
+}
+.numBox
+{
+    /* font-family: 'Pinyon Script', cursive; */
+    font-family: 'Playfair Display', serif;
+    font-size: 7px;
+    width:35px;
+    height:35px;
+    background:linear-gradient( 35deg, rgb(182, 238, 243), #ebd0ad);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:grey;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+}
+.numBox:hover
+{
+    cursor: pointer;
+}
+.main-head
+{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 15px;
+    margin:15px;
+}
+.foodtitle{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 18px;
+}
+.text-wrap
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.text-wrap, .foodtitle
+{
+    text-align:center;
+    justify-content: center;
+    
+    /* color:white; */
+}
+.indexContainer{
+ display: flex;
+ margin:2.5rem 0rem;
+ justify-content: center;
+align-items:center;
+}
+.allrecipes{
+    background-color: #001308;
+    color:white;
+    padding:5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.recipeinfoImg
+{
+    width:450px;
+    height:450px;
+    border-radius: 3px;
+    margin:50px;
+    margin-right:50px;
+    margin-top: 80px;
+    
+}
+.detail{
+    background-color: white;
+    color:black;
+}
+.panel
+{
+    margin:40px;
+    text-align: left;
+}
+.leftcoloumn
+{
+    background-color:#81807d;
+    
+}
+.recipetitle{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-style:bolder;
+    color:rgb(243, 243, 205);
+}
+.foodarea
+{
+    font-family: 'Julius Sans One', sans-serif; 
+    font-size: 20px;
+    color:white;
+
+}
+.foodcategory
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+.foodtag{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 18px;
+    color: white;
+}
+.rightcoloumn
+{
+    color:white;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #6d6781 0%, #666e77 74%);
+    /* background-color: #4c4177;
+background-image: linear-gradient(315deg,  0%, #2a5470 74%); */
+}
+.recipeVideo
+{
+    width:1000px;
+    height: 450px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.footer{
+    
+    color:white;
+    font-family: 'Dancing Script', cursive; 
+    text-align: center;   
+    padding:5px;
+    border:none;
+}
+.homelink
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+.homelink:hover{
+    cursor:pointer;
+}
+.linkbtn
+{
+    letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+    line-height: 45px; 
+  max-width: 160px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  color: white;
+  background: transparent;
+  outline: solid  1px #000;
+  /* display:; */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+.linkbtn:hover
+{    
+  background: black;
+}
+
+
+@media (max-width: 1024px) {
+    .recipeVideo
+    {
+        width:100%
+    }
+
+}
+
+@media only screen and (max-width:850px)
+{
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .recipetitle
+    {
+        font-size: 25px;
+    }
+    .recipeVideo
+    {
+        width:100%
+    }
+    .leftcoloumn, .rightcoloumn
+    {
+        width: 100%;
+    }
+    .foodtitle
+    {
+        font-size: 14px;
+    }
+    .search-bar
+    {
+        width:250px;
+    }
+  }
+  @media (max-width: 425px) 
+  {
+    .recipeinfoImg
+    {
+        width:70%;
+        height:70%;
+    }
+    .numBox{
+        overflow: auto;
+        width:70%;
+        height:70%;
+        flex-direction: auto;
+        margin: 1px ;
+        border-radius: 0; 
+    }
+    .indexletter
+    {
+        font-size: 14px;
+    }
+  }
